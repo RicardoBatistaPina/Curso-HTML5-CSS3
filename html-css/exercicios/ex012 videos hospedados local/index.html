@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados locamente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p><video src="midia/Koolshooters.mp4" controls></video>  
+    <video src="midia/Koolshooters.m4v" controls></video> 
+    <video src="midia/Koolshooters.webm" controls width=" 250px "></video></p>
+    <h2>Outro modo via code</h2>
+    <video whith="300px" poster="imagens/Koolshooters.png" controls>
+        <source src="midia/koolshooters.mp4" type="video/mp4">
+        <source src="midia/koolshooters.m4v" type="video/m4v">
+        <source src="midia/koolshooters.webm" type="video/webm">
+        <p>Seu navegador não tem compatiblidade com reprodução de vídeo.</p>
+    </video>
+    <!--whith tambem dá com % relação á largura do navegador-->
+    <h1>Inserindo videos do youtube</h1> <!--Buscar no YouTube a cópia código incorporado. com <> -->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/21mDekTZwsw" title="Brilhante - Curta Metragem de Animação (2021)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

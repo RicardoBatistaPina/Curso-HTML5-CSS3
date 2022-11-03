@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            border: 10px solid transparent;
+            margin: 10px;
+            border-image: url(borda.png) 25 repeat;
+        }
+        /*
+            border-image-source: url(borda.png);
+            border-image-slice: 25;
+            border-image-repeat: repeat;
+        */
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 5px;
+            margin: 10px;
+            background-color: rgba(53, 46, 46, 0.515);       
+        }      
+        a:hover {
+            background-color: transparent;
+            color: green;
+            margin: 6px;
+            border-style: solid;
+            border-color: green;
+            border-width: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    <br>
+    <a href="caixa02.html">Ir caixa02</a>
+    
+</body>
+</html>
