@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+* {
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* fr = fragmento */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: /* Mapa de posicionamento e as suas chamadas */
+        " green green " 
+        "   .   blue  "
+        "   .   blue  ";
+
+}
+.itens {
+    margin: 5px;
+    box-shadow: 2px 2px 1px rgba(128, 128, 128, 0.384);
+    background-color: red;
+    border-radius: 5px;
+}
+.greenbox {
+    width: 200px;
+    background-color: green;
+    grid-area: green; /* Chamada */
+}
+.bluebox {
+    height: 200px;
+    background-color: blue;
+    grid-area: blue; /* Chamada */
+}
